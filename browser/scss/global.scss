@@ -1,0 +1,45 @@
+*:not(.mat-drawer) {
+  @apply duration-300;
+}
+
+.mat-field {
+  @apply w-full px-4;
+}
+
+::ng-deep .mdc-notched-outline > * {
+  border-color: green !important;
+}
+
+::ng-deep .mdc-text-field--focused .mdc-notched-outline > * {
+  border-color: darkorange !important;
+}
+
+::ng-deep .mdc-text-field--invalid .mdc-notched-outline > * {
+  border-color: cyan !important;
+}
+
+.button-style {
+  @apply text-base mx-auto px-4 py-2 font-semibold text-sm bg-buttonSecondary hover:bg-buttonPrimary text-white rounded-full shadow-sm flex items-center justify-center;
+}
+
+.tags {
+  div {
+    @apply flex flex-wrap;
+
+    .date {
+      @apply text-black rounded-md ml-2 mt-2 px-2 bg-white;
+    }
+
+    .category {
+      @apply text-white rounded-md ml-2 mt-2 px-2 bg-buttonPrimary;
+    }
+
+    .material-type {
+      @apply text-white rounded-md ml-2 mt-2 px-2 bg-buttonSecondary;
+    }
+
+    .tag {
+      @apply text-white rounded-md ml-2 mt-2 px-2 bg-yellow-500;
+    }
+  }
+}
